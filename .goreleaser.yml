@@ -1,0 +1,33 @@
+project_name: "go-emojify"
+build:
+  binary: "go-emojify"
+  main: cmd/go-emojify/main.go
+  env:
+    - CGO_ENABLED=0
+  goos:
+    - linux
+    - windows
+    - darwin
+  goarch:
+    - 386
+    - amd64
+    - arm
+    - arm64
+  ignore:
+    - goos: windows
+      goarch: arm
+archives:
+  - name_template: "{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}_{{ .Tag }}"
+    replacements:
+      darwin: Darwin
+      linux: Linux
+      windows: Windows
+      386: i386
+      amd64: x86_64
+snapshot:
+  name_template: "{{ .Tag }}-next"
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - "^img:"
