@@ -31,3 +31,6 @@ changelog:
   filters:
     exclude:
       - "^img:"
+release:
+  draft: true
+  prerelease: auto
