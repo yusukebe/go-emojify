@@ -42,5 +42,6 @@ brews:
       token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
     folder: Formula
     homepage: "https://github.com/yusukebe/go-emojify"
+    name: "go-emojify"
     description: "Yet another emojify command written in Go "
     license: "MIT"
