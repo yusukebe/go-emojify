@@ -38,7 +38,7 @@ release:
 brews:
   - tap:
       owner: yusukebe
-    name: homebrew-go-emojify
+      name: homebrew-go-emojify
     folder: Formula
     homepage: "https://github.com/yusukebe/go-emojify"
     description: "Yet another emojify command written in Go "
