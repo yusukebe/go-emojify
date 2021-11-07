@@ -38,7 +38,7 @@ release:
 brews:
   - tap:
       owner: yusukebe
-      name: homebrew-go-emojify
+      name: homebrew-tap
       token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
     folder: Formula
     homepage: "https://github.com/yusukebe/go-emojify"
